@@ -68,6 +68,11 @@ namespace LinkedList
             tail = tempNode;
             tail.Next = null;
         }
+        public void deleteAfter(Node<T> node)
+        {
+            Node<T> tempNode = node.Next;
+            node.Next = tempNode.Next;
+        }
         public void displayLikedList()
         {
             StringBuilder myLinkedList = new StringBuilder();
