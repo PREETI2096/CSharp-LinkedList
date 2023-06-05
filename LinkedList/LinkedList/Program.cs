@@ -17,6 +17,8 @@
              list.addLast(node3);
 
             list.addAfter(node2, node4);
+            list.deleteFirst();
+            list.deleteLast();
             list.displayLikedList();
         }
     }

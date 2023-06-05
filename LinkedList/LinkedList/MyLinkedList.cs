@@ -52,6 +52,22 @@ namespace LinkedList
             newNode.Next = myNode.Next;
             tempNode.Next = newNode;
         }
+        public void deleteFirst()
+        {
+            head = head.Next;
+        }
+
+        public void deleteLast()
+        {
+            Node<T> tempNode = head;
+            while (!tempNode.Next.Equals(tail))
+            {
+                tempNode = tempNode.Next;
+            }
+
+            tail = tempNode;
+            tail.Next = null;
+        }
         public void displayLikedList()
         {
             StringBuilder myLinkedList = new StringBuilder();
