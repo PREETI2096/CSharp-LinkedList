@@ -11,9 +11,9 @@
             Node<int> node3 = new Node<int>(30);
 
             MyLinkedList<int> list = new MyLinkedList<int>();
-            list.addFirst(node1);
-            list.addFirst(node2);
-            list.addFirst(node3);
+            list.addLast(node1);
+            list.addLast(node2);
+            list.addLast(node3);
             list.displayLikedList();
         }
     }

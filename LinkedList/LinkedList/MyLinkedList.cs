@@ -32,7 +32,20 @@ namespace LinkedList
                 head.Next = tempNode;
             }
         }
-
+        public void addLast(Node<T> node)
+        {
+            if (head == null)
+            {
+                head = node;
+                tail = node;
+            }
+            else
+            {
+                Node<T> tempNode = tail;
+                tempNode.Next = node;
+                tail = node;
+            }
+        }
         public void displayLikedList()
         {
             StringBuilder myLinkedList = new StringBuilder();
