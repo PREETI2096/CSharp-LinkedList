@@ -46,6 +46,12 @@ namespace LinkedList
                 tail = node;
             }
         }
+        public void addAfter(Node<T> myNode, Node<T> newNode)
+        {
+            Node<T> tempNode = myNode;
+            newNode.Next = myNode.Next;
+            tempNode.Next = newNode;
+        }
         public void displayLikedList()
         {
             StringBuilder myLinkedList = new StringBuilder();
